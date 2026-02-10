@@ -38,6 +38,14 @@ h1 {
   background: white;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ESTO ES LO NUEVO: estilo cuando está seleccionado */
+.day-btn.selected {
+  background: #222;
+  color: white;
+  border-color: #222;
 }
 
 .day-btn:hover {
