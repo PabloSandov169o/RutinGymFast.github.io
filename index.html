@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJEXL0TZTB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QJEXL0TZTB');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creamos tu rutina</title>
+  <title>Creador de Rutina</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>CREAMOS TU RUTINA</h1>
+  <div class="container">
 
+    <h1>Crea tu rutina de gimnasio</h1>
+
+    <div class="card">
+      <h2>¿Cuántos días puedes entrenar?</h2>
+
+      <div class="days-grid">
+        <button class="day-btn" data-day="1">1 día</button>
+        <button class="day-btn" data-day="2">2 días</button>
+        <button class="day-btn" data-day="3">3 días</button>
+        <button class="day-btn" data-day="4">4 días</button>
+        <button class="day-btn" data-day="5">5 días</button>
+        <button class="day-btn" data-day="6">6 días</button>
+        <button class="day-btn" data-day="7">7 días</button>
+      </div>
+
+      <p id="day-message" class="info-message"></p>
+    </div>
+
+    <div class="card">
+      <h2>¿Cuántas horas puedes entrenar?</h2>
+      <p class="recommendation">Recomendado: 2 horas</p>
+
+      <input type="number" id="hours-input" min="1" max="3" placeholder="Escribe entre 1 y 3">
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
